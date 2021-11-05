@@ -8,12 +8,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>Homepage</h1>
       <Link href="/ninjas">
         <a>Ninjas Listing</a>
       </Link>
-      <Footer />
     </div>
   );
 }
