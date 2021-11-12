@@ -1,3 +1,5 @@
+import styles from '../../styles/Ninjas.module.css'
+
 // fetch method 
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -13,7 +15,7 @@ const Ninjas = ({ ninjas }) => {
       <h1>Ninjas</h1>
       {ninjas.map((ninja) => (
         <div key={ninja.id}>
-          <a>
+          <a className={styles.single}>
             <h3>{ninja.name}</h3>
           </a>
         </div>
