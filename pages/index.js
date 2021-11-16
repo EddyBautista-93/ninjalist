@@ -7,6 +7,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
+    <>
+    <Head>
+    <title>Blog || HomePage</title>
+    </Head>
     <div>
       <h1 className={styles.title}>Homepage</h1>
       <p className={styles.text}>kmfkl;wem wekmrklwmekl eqklwmneklqwneklq ndfklnlqwikniroqwn nqownelkqwnelkwq</p>
@@ -14,5 +18,6 @@ export default function Home() {
         <a>Ninjas Listing</a>
       </Link>
     </div>
+    </>
   );
 }
